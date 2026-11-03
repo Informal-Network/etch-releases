@@ -9,3 +9,9 @@ source archive is ever mirrored.
 - Update feed: `releases/latest/download/update.json`
 - Every asset is listed in `SHA256SUMS`; each updater payload ships with its
   `.sig` minisign signature.
+
+## Release policy
+
+Releases follow the [continuous canary policy](docs/RELEASE-POLICY.md): etch-app
+mirrors each release here as soon as it is cut, and nothing waits for a time
+gate. The update channel rolls each release out in stages.
